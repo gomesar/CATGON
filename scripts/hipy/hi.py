@@ -4,7 +4,7 @@ import threading
 # Crypt
 from hashlib import sha256
 import base64
-from Crypto.Cipher import AES
+from Crypto.Cipher import AES   # Use pip3 install pycrypto
 from Crypto import Random
 import configparser
 """
@@ -192,7 +192,7 @@ if __name__ == "__main__":
     elif len(sys.argv) == 3:
         hipy = Hipy(sys.argv[1], cfg_file = sys.argv[2])
     else:
-        print("Use: {} <connetion> [<cfg_file>]".format(argv[0]) )
+        print("Use: {} <connetion> [<cfg_file>]".format(sys.argv[0]) )
         sys.exit(1)
 
     hipy.run()
