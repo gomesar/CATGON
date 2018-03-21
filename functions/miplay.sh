@@ -19,7 +19,7 @@ _miplay_completions()
 	local cur prev opts
 
 	cur="${COMP_WORDS[1]}"
-    prev="${COMP_WORDS[COMP_CWORD-1]}"
+	prev="${COMP_WORDS[COMP_CWORD-1]}"
 	opts="$(ls ${my_instants_folder} | grep '.mp3' | sed 's/\t/\n/')"
 
 	COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
