@@ -8,7 +8,7 @@ Repo says:
 - [add_headers](scripts/add_headers.sh) in your `.c`, `.h` and `.py` files.
 - Say [hi.py](scripts/hipy/) to your lab friend avoiding internet, big companies and curious.
 - Enhance your `bash` experience with this [tools](functions/tools.sh).
-- Play [MyInstants](www.myinstants.com) sounds from your terminal with [miplay](functions/miplay.sh).
+- Play [MyInstants](https://www.myinstants.com) sounds from your terminal with [miplay](functions/miplay.sh).
 
 ______
 > Disclaimer: No work time were sacrificed or injured during the development of this project.
