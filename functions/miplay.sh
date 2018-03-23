@@ -4,10 +4,10 @@
 # (Put only .mp3 files from 'www.myinstants.com' in this folder).
 # Dependency: <sudo apt-get install> sox libsox-fmt-mp3
 
-my_instant_folder=~/Music/my-instants/
+my_instants_folder=~/Music/my-instants/
 
 function miplay() {
-	play "${my_instant_folder}"$1
+	play "${my_instants_folder}"$1
 }
 
 _miplay_completions()
