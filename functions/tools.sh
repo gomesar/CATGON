@@ -12,5 +12,5 @@ function cdl() {
 }
 
 function externalip() {
-	echo "Your external IP is: `python -c 'from requests import get;print(get("https://api.ipify.org").text)'`"
+	echo "`python -c 'from requests import get;print(get("https://api.ipify.org").text)'`"
 }
