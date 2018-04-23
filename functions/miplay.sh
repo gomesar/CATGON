@@ -3,11 +3,13 @@
 # Correctly configure 'my_instant_folder' variable
 # (Put only .mp3 files from 'www.myinstants.com' in this folder).
 # Dependency: <sudo apt-get install> sox libsox-fmt-mp3
+# Add to your interpreter config file (.bashrc, .zsh, etc):
+# 	source path/to/miplay.sh &>/dev/null
 
-my_instants_folder=~/Music/my-instants/
+my_instant_folder=~/Music/my-instants/
 
 function miplay() {
-	play "${my_instants_folder}"$1
+	play "${my_instant_folder}"$1
 }
 
 _miplay_completions()
@@ -19,10 +21,16 @@ _miplay_completions()
 	local cur prev opts
 
 	cur="${COMP_WORDS[1]}"
-	prev="${COMP_WORDS[COMP_CWORD-1]}"
+    prev="${COMP_WORDS[COMP_CWORD-1]}"
 	opts="$(ls ${my_instants_folder} | grep '.mp3' | sed 's/\t/\n/')"
 
 	COMPREPLY=( $(compgen -W "${opts}" -- "${cur}") )
 	return 0
 }
-complete -F _miplay_completions miplay
+if [ -z "$ZSH" ]; then
+	echo "ZSH not found"
+	complete -F _miplay_completions miplay
+else
+	echo "ZSH detected"
+	compdef _miplay_completion miplay
+fi
