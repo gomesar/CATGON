@@ -1,5 +1,5 @@
 # CATGON
-I **Ca**n not **t**hink in a **g**ood **n**ame.
+I **Ca**n not **t**hink in a **go**od **n**ame.
 
 ______
 
@@ -9,6 +9,7 @@ Repo says:
 - Say [hi.py](scripts/hipy/) to your lab friend avoiding internet, big companies and curious.
 - Enhance your `bash` experience with this [tools](functions/tools.sh).
 - Play [MyInstants](https://www.myinstants.com) sounds from your terminal with [miplay](functions/miplay.sh).
+- [Cardápio da Unicamp](scripts/cardapio.py)
 
 ______
 > Disclaimer: No work time were sacrificed or injured during the development of this project.
