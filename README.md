@@ -9,7 +9,7 @@ Repo says:
 - Say [hi.py](scripts/hipy/) to your lab friend avoiding internet, big companies and curious.
 - Enhance your `bash` experience with this [tools](functions/tools.sh).
 - Play [MyInstants](https://www.myinstants.com) sounds from your terminal with [miplay](functions/miplay.sh).
-- [Cardápio da Unicamp](scripts/cardapio.py)
+- [Cardádio da Unicamp](scripts/cardapio.py) ([GIST)(https://gist.github.com/gomesar/0c647534de1dee21eb8e1ab14ce9bc85))
 
 ______
 > Disclaimer: No work time were sacrificed or injured during the development of this project.
